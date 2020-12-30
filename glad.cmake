@@ -14,6 +14,7 @@ if( NOT TARGET glad )
     target_link_libraries(      glad PRIVATE "${CMAKE_DL_LIBS}" )
     #-----------------------------------------------------------------
     target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/src/glad.c" )
+    target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/include/glad/glad.h" )
     #-----------------------------------------------------------------
     #set_source_files_properties( "${CMAKE_CURRENT_LIST_DIR}/src/glad.c" PROPERTIES COMPILE_FLAGS -Wno-pedantic )
     #-----------------------------------------------------------------
