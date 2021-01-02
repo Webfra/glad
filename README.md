@@ -1,4 +1,4 @@
-# glad-v0.1.34-GL4.6
+# glad
 glad v0.1.34 for OpenGL 4.6
 
 Source files taken from:
