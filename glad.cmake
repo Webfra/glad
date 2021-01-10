@@ -15,6 +15,7 @@ if( NOT TARGET glad )
     #-----------------------------------------------------------------
     target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/src/glad.c" )
     target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/include/glad/glad.h" )
+    target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/include/KHR/khrplatform.h" )
     #-----------------------------------------------------------------
     #set_source_files_properties( "${CMAKE_CURRENT_LIST_DIR}/src/glad.c" PROPERTIES COMPILE_FLAGS -Wno-pedantic )
     #-----------------------------------------------------------------
