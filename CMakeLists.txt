@@ -10,7 +10,7 @@ add_library ( glad STATIC )
 target_include_directories( glad PUBLIC  "${CMAKE_CURRENT_LIST_DIR}/include" )
 #-----------------------------------------------------------------
 # Required for Linux?
-target_link_libraries(      glad PRIVATE "${CMAKE_DL_LIBS}" )
+target_link_libraries(      glad PRIVATE "${CMAKE_DL_LIBS}" GL )
 #-----------------------------------------------------------------
 target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/src/glad.c" )
 target_sources (            glad PRIVATE "${CMAKE_CURRENT_LIST_DIR}/include/glad/glad.h" )
