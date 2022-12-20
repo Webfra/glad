@@ -101,7 +101,7 @@ void APIENTRY openglCallbackFunction(GLenum source,
     auto throw_an_exception { false };
     auto show_log { true };
 
-    // if( id == 131185 ) return;
+    if( id == 131185 ) return;
 
     if( severity == GL_DEBUG_SEVERITY_HIGH )
         show_log = true;
@@ -133,7 +133,7 @@ glad::glad(::GLADloadproc loadproc)
         ::glDebugMessageCallback(openglCallbackFunction, nullptr);
         GLuint unusedIds = 0;
         ::glDebugMessageControl(GL_DEBUG_SOURCE_API, GL_DEBUG_TYPE_ERROR, GL_DEBUG_SEVERITY_HIGH, 0, nullptr, GL_TRUE);
-        std::cout << "OpenGL debug message control - unused IDs: " << unusedIds << std::endl;
+        // std::cout << "OpenGL debug message control - unused IDs: " << unusedIds << std::endl;
     }
     else
     {
